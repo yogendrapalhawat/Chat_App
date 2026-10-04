@@ -867,7 +867,7 @@ Please avoid committing credentials, generated build files, or unrelated changes
 
 Computer Science Engineering Student | Full-Stack Development | Software Engineering
 
-- **Live Project:** [Quick Chat App](https://thetachat.com)
+- **Live Project:** [Quick Chat App](Thetachat.com)
 - **GitHub:** Add your GitHub profile URL
 - **LinkedIn:** Add your LinkedIn profile URL
 
