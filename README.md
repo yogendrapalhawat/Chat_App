@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>🌐 Live Demo: <a href="https://thetachat.com">https://thetachat.com</a></strong>
+  <strong>🌐 Live Demo: <a href="Thetachat.com">https://thetachat.com</a></strong>
 </p>
 
 <p align="center">
@@ -91,7 +91,7 @@ The primary objectives are to:
 
 ## 🌐 Live Demo
 
-**Try Quick Chat App:** [https://thetachat.com](https://thetachat.com)
+**Try Quick Chat App:** [https://thetachat.com](Thetachat.com)
 
 Open the live application to explore its interface and test the available features.
 
@@ -703,7 +703,7 @@ After deployment, test:
 - CORS configuration.
 - Socket.IO connectivity.
 
-**Live Application:** [https://thetachat.com](https://thetachat.com)
+**Live Application:** [https://thetachat.com](Thetachat.com)
 
 ---
 
@@ -884,5 +884,5 @@ Until a license is added, do not assume that the repository is available for unr
 <p align="center">
   Built with React, Node.js, Express.js, MongoDB, Socket.IO, and Cloudinary.
   <br /><br />
-  <strong>Explore the live application: <a href="https://thetachat.com">Quick Chat App</a></strong>
+  <strong>Explore the live application: <a href="Thetachat.com">Quick Chat App</a></strong>
 </p>
