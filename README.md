@@ -600,13 +600,6 @@ Set the value to the backend base URL expected by your frontend code. The variab
 ```bash
 npm run dev
 ```
-
-Open the local URL displayed by Vite, typically:
-
-```text
-http://localhost:5173
-```
-
 ### Step 8: Verify the Application
 
 - Check that the backend connects to MongoDB.
@@ -868,8 +861,8 @@ Please avoid committing credentials, generated build files, or unrelated changes
 Computer Science Engineering Student | Full-Stack Development | Software Engineering
 
 - **Live Project:** [Quick Chat App](https://thetachat.com)
-- **GitHub:** Add your GitHub profile URL
-- **LinkedIn:** Add your LinkedIn profile URL
+- **GitHub:** https://github.com/yogendrapalhawat
+- **LinkedIn:** https://www.linkedin.com/in/yogendra-palhawat-9aa2352b3/
 
 ---
 
