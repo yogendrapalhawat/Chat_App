@@ -1,11 +1,11 @@
-# QuickChat — Real-Time Chat Application
+# Quick Chat App — Real-Time Messaging Platform
 
 <p align="center">
-  A modern, full-stack messaging application built for seamless one-to-one conversations, live online presence, and image sharing.
+  A modern, full-stack messaging application built for seamless one-to-one conversations, real-time online presence, and image sharing.
 </p>
 
 <p align="center">
-  <strong>🌐 Live Demo: https://thetachat.com</strong>
+  <strong>🌐 Live Demo: <a href="https://thetachat.com">https://thetachat.com</a></strong>
 </p>
 
 <p align="center">
@@ -28,72 +28,76 @@
 - [Live Demo](#-live-demo)
 - [Key Features](#-key-features)
 - [Technology Stack](#-technology-stack)
-- [System Architecture](#-system-architecture)
+- [System Architecture](#️-system-architecture)
 - [Application Workflow](#-application-workflow)
 - [Project Structure](#-project-structure)
-- [Database Design](#-database-design)
+- [Database Design](#️-database-design)
 - [API Documentation](#-api-documentation)
-- [Installation and Setup](#-installation-and-setup)
+- [Installation and Setup](#️-installation-and-setup)
 - [Environment Variables](#-environment-variables)
 - [Deployment](#-deployment)
+- [Engineering Highlights](#-engineering-highlights)
 - [Security Considerations](#-security-considerations)
 - [Testing Checklist](#-testing-checklist)
 - [Challenges and Learning Outcomes](#-challenges-and-learning-outcomes)
 - [Future Improvements](#-future-improvements)
 - [Contributing](#-contributing)
-- [Author](#-author)
+- [Author](#️-author)
+- [License](#-license)
 
 ---
 
 ## 🚀 Project Overview
 
-**ThetaChat** is a full-stack, real-time messaging application designed to provide users with a simple and interactive communication experience.
+**Quick Chat App** is a full-stack, real-time messaging application designed to provide users with a simple, interactive, and responsive communication experience.
 
 The application enables users to create accounts, authenticate securely, discover other registered users, exchange messages in real time, share images, and manage their profiles.
 
 The frontend is developed using React and Vite, while the backend uses Node.js and Express.js. MongoDB provides persistent data storage, Socket.IO enables real-time communication, and Cloudinary handles image hosting.
 
-The project demonstrates practical software engineering concepts, including REST API development, authentication, authorization, database modeling, event-driven communication, third-party service integration, and full-stack deployment.
+The project demonstrates practical software engineering concepts, including REST API development, authentication, database modeling, event-driven communication, third-party service integration, and full-stack deployment.
 
-🔗 **Live Application:** [https://thetachat.com](https://thetachat.com)
+### 🎯 Problem Statement
 
-## 🎯 Problem Statement
+Modern messaging applications need reliable communication, efficient message handling, and a responsive user experience.
 
-Traditional messaging interfaces require reliable communication, efficient message handling, and a responsive user experience.
+This project addresses several common requirements:
 
-This project addresses several common requirements of a modern messaging application:
-
-- Users need a simple way to create accounts and access their conversations.
+- Users need a simple way to create accounts and access conversations.
 - Messages should appear without manually refreshing the application.
 - Users need visibility into which contacts are currently online.
-- Conversations should remain available after navigating away from a chat.
+- Conversation history should remain available after navigating away from a chat.
 - Users should be able to exchange images in addition to text.
 - Profile information should be manageable through the application interface.
 
-ThetaChat combines these capabilities into a single full-stack web application.
+Quick Chat App brings these capabilities together in a single web application.
 
-## 💡 Project Objectives
+### 💡 Project Objectives
 
-The main objectives of ThetaChat are:
+The primary objectives are to:
 
 1. Build a responsive messaging interface using React.
 2. Develop REST APIs using Node.js and Express.js.
-3. implement user authentication using JWT.
-4. Protect passwords through secure hashing with bcrypt.
-5. Store users and messages in MongoDB.
+3. Implement user authentication using JSON Web Tokens (JWT).
+4. Protect passwords through hashing with bcrypt.
+5. Store user and message data in MongoDB.
 6. Implement real-time messaging using Socket.IO.
 7. Track connected users and display online status.
 8. Support image sharing using Cloudinary.
 9. Provide profile management and unread-message indicators.
 10. Deploy the application so users can access it through a live website.
 
+---
+
 ## 🌐 Live Demo
 
-**Try ThetaChat:** [https://thetachat.com](https://thetachat.com)
+**Try Quick Chat App:** [https://thetachat.com](https://thetachat.com)
 
-Open the live application to explore the interface and test the available features.
+Open the live application to explore its interface and test the available features.
 
 For a complete messaging demonstration, use two separate test accounts in different browser sessions, where account access is available.
+
+---
 
 ## ✨ Key Features
 
@@ -127,7 +131,7 @@ For a complete messaging demonstration, use two separate test accounts in differ
 - Upload and send images within conversations.
 - Store uploaded images using Cloudinary.
 - Save image URLs with their corresponding messages.
-- Display shared images in the conversation.
+- Display shared images in conversations.
 - View images associated with the selected conversation.
 
 ### 5. Profile Management
@@ -182,9 +186,11 @@ For a complete messaging demonstration, use two separate test accounts in differ
 | dotenv | Environment variable configuration |
 | CORS | Cross-origin request configuration |
 
+---
+
 ## 🏗️ System Architecture
 
-ThetaChat follows a **client-server architecture** with REST APIs for application operations and Socket.IO for real-time communication.
+Quick Chat App follows a **client-server architecture** with REST APIs for application operations and Socket.IO for real-time communication.
 
 ### High-Level Architecture
 
@@ -234,6 +240,8 @@ Maintains client connections, tracks online users, and delivers new-message even
 **7. Media Storage — Cloudinary**
 
 Stores uploaded images and provides URLs that can be referenced by the application.
+
+---
 
 ## 🔄 Application Workflow
 
@@ -388,6 +396,8 @@ Chat_App-main/
 └── README.md
 ```
 
+*Note: This is the documented project structure. Check it against your actual repository and update filenames or directories if your code uses a different structure.*
+
 ### Frontend Responsibilities
 
 | File | Responsibility |
@@ -424,7 +434,7 @@ Chat_App-main/
 
 ## 🗄️ Database Design
 
-ThetaChat uses MongoDB with Mongoose to model application data.
+Quick Chat App uses MongoDB with Mongoose to model application data.
 
 ### 1. User Collection
 
@@ -454,7 +464,7 @@ The message model represents individual messages exchanged between users.
 | `createdAt` | Message creation timestamp |
 | `updatedAt` | Last update timestamp |
 
-The exact stored fields and timestamp behavior depend on the schema definition in the source code.
+*The exact stored fields and timestamp behavior depend on the schema definition in the source code.*
 
 ### Database Relationships
 
@@ -494,18 +504,20 @@ The backend exposes REST API endpoints for authentication, profile management, u
 |---|---|---|
 | `GET` | `/api/status` | Return a basic server status response |
 
-**API notes:**
+### API Notes
 
 - Protected endpoints require valid authentication.
 - The frontend should use the correct deployed backend URL.
-- Request bodies and response formats should be checked against the relevant controllers when integrating another client.
+- Request bodies and response formats should be checked against the relevant controllers.
 - Socket.IO events handle real-time updates separately from ordinary REST responses.
+
+*Verify these endpoint paths and HTTP methods against your actual route files before publishing the documentation.*
 
 ---
 
 ## ⚙️ Installation and Setup
 
-Follow these steps to run ThetaChat locally.
+Follow these steps to run Quick Chat App locally.
 
 ### Prerequisites
 
@@ -524,7 +536,7 @@ git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd Chat_App-main
 ```
 
-Replace `<YOUR_GITHUB_REPOSITORY_URL>` with your actual GitHub repository URL.
+Replace `<YOUR_GITHUB_REPOSITORY_URL>` with your actual GitHub repository URL. Update the directory name if your cloned repository uses a different name.
 
 ### Step 2: Install Backend Dependencies
 
@@ -546,15 +558,17 @@ PORT=5000
 
 Add the Cloudinary environment variables required by your `server/lib/cloudinary.js` configuration.
 
-**Important:** Use the exact variable names read by your source code and hosting configuration. Never use real credentials in this README.
+**Important:** Use the exact variable names read by your source code and hosting configuration. Never place real credentials in this README.
 
 ### Step 4: Start the Backend
+
+Use the command defined by your backend `package.json`. For example, if the corresponding scripts exist:
 
 ```bash
 npm run server
 ```
 
-For a production-style start:
+Or, if the `start` script is configured:
 
 ```bash
 npm start
@@ -579,7 +593,7 @@ Create a `.env` file inside the `client` directory.
 VITE_BACKEND=http://localhost:5000
 ```
 
-Set the value to the backend base URL expected by the frontend code.
+Set the value to the backend base URL expected by your frontend code. The variable name must match the name used in your API configuration.
 
 ### Step 7: Start the Frontend
 
@@ -596,8 +610,8 @@ http://localhost:5173
 ### Step 8: Verify the Application
 
 - Check that the backend connects to MongoDB.
-- Confirm the frontend points to the correct backend.
-- Confirm the backend permits the local frontend origin through CORS.
+- Confirm that the frontend points to the correct backend.
+- Confirm that the backend permits the local frontend origin through CORS.
 - Verify that login and registration work.
 - Test messaging with two separate user accounts.
 - Configure Cloudinary before testing image uploads.
@@ -632,7 +646,7 @@ Environment variables store deployment-specific configuration and sensitive cred
 
 ## 🚀 Deployment
 
-ThetaChat can be deployed using separate frontend and backend services.
+Quick Chat App can be deployed using separate frontend and backend services.
 
 ### Frontend Deployment
 
@@ -678,7 +692,16 @@ Verify:
 
 ### Production Verification
 
-After deployment, test registration, login, profile updates, image uploads, message persistence, live message delivery, online status, and CORS configuration.
+After deployment, test:
+
+- Registration and login.
+- Profile updates.
+- Image uploads.
+- Message persistence.
+- Real-time message delivery.
+- Online status.
+- CORS configuration.
+- Socket.IO connectivity.
 
 **Live Application:** [https://thetachat.com](https://thetachat.com)
 
@@ -748,7 +771,7 @@ Use this checklist when validating the application.
 
 ## 📚 Challenges and Learning Outcomes
 
-Developing ThetaChat provides experience with common challenges encountered in full-stack applications.
+Developing Quick Chat App provides experience with common challenges encountered in full-stack applications.
 
 ### 1. Coordinating Frontend and Backend State
 
@@ -806,7 +829,7 @@ Potential improvements for future versions include:
 - Logging, monitoring, and performance optimization.
 - Enhanced connection recovery and message delivery reliability.
 
-These are proposed enhancements, not claims that all of them are already implemented.
+*These are proposed enhancements, not claims that all of them are already implemented.*
 
 ---
 
@@ -844,7 +867,7 @@ Please avoid committing credentials, generated build files, or unrelated changes
 
 Computer Science Engineering Student | Full-Stack Development | Software Engineering
 
-- **Live Project:** [ThetaChat](https://thetachat.com)
+- **Live Project:** [Quick Chat App](https://thetachat.com)
 - **GitHub:** Add your GitHub profile URL
 - **LinkedIn:** Add your LinkedIn profile URL
 
@@ -861,5 +884,5 @@ Until a license is added, do not assume that the repository is available for unr
 <p align="center">
   Built with React, Node.js, Express.js, MongoDB, Socket.IO, and Cloudinary.
   <br /><br />
-  <strong>Explore the live application: <a href="https://thetachat.com">ThetaChat</a></strong>
+  <strong>Explore the live application: <a href="https://thetachat.com">Quick Chat App</a></strong>
 </p>
